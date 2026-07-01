@@ -9,6 +9,7 @@ public class BookService {
     // Setter method for dependency injection
     public void setBookRepository(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
+        System.out.println("BookRepository injected into BookService!");
     }
 
     public void addBook(String bookName) {
